@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aad23fac21.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo (2).png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+                
+
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Student</p><h1>Hi, I'm <span> Upeksha </span><br> From Sri Lanka</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------about------------------------ -->
+<div id ="about-me">
+    <div class="container">
+        <div class="raw">
+
+            <div class="about-me-col-1">
+                <img src="img/up.png" >
+            </div>
+            <div class="about-me-col-2">
+
+                <h1 class="sub-title">About me</h1>
+                <p>IT Undergraduate at Sabaragamuwa University | Information System. <br>I am a passionate first-year student at Sabaragamuwa University, building a strong foundation in Information Systems. I love solving logical problems and I'm constantly exploring new technologies to keep pace with the evolving tech landscape. Driven by curiosity, I am currently focused on expanding my technical knowledge and developing skills to solve real-world problems.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event,'skills')"> Skills</p>
+                    <p class="tab-links"onclick="opentab(event, 'experience')"> Experience</p>
+                    
+                    <p class="tab-links"onclick="opentab(event, 'education')"> Education</p>
+                </div>
+                
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data enty & Data cleaning</span><br>spredsheet</li>
+                        <li><span>Communication</span><br>Social work</li>
+                        <li><span>presentation</span></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span></span><br></li>
+                        <li><span></span><br></li>
+                        <li><span></span></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents"id=education>
+                    <ul>
+                        <li><span>2024-present</span><br>Sabaragamuwa University of Sri Lanka</li>
+                        <li><span>2022</span><br>Poramadulla Central collage</li>
+                        
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!-- ---------------------------Services-------------------------------- -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2> Data cleaning</h2>
+                <p>I can help to clean your mess data</p>
+                <a href="#">learn more</a>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop"></i>
+                <h2> Data Entry</h2>
+                <p>I can help to entry your valuable data</p>
+                <a href="#">learn more</a>
+
+            </div>
+
+        </div>
+    </div>
+ </div>
+<!-- --------------------------portfolio---------------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.png">
+                <div class="layer">
+                    <h3>Data cleaning</h3>
+                    <p>Cleaning the data is the process of identifying and correcting or removing errors, inconsistencies, and inaccuracies in a dataset to improve its quality and reliability for analysis.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work-2.png">
+            </div>
+            <div class="work">
+                <img src="img/work-3.png">
+            </div>
+        </div>
+
+    </div>
+ </div>
+ <!-- ---------------------------contact--------------------------- -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+
+            </div>
+            <div class="contact-right">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p>upekshawikcramasinghe2005@gmail.com</p>
+                <p>0774714015</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook></i></a>
+                </div>
+
+
+
+                
+                
+
+
+            </div>
+
+        </div>  
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(ev,tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        ev.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add('active-tab');
+        
+     }
+</script>
+</body>
+</html>
